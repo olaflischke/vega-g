@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysUndCollections", "ArraysUndCollections\ArraysUndCollections.csproj", "{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3481496-B387-4BC3-955B-12E7A652A4D1}
+	EndGlobalSection
+EndGlobal

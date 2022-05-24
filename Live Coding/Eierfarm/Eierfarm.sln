@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmBl", "EierfarmBl\EierfarmBl.csproj", "{8C28700E-EA38-4A18-A0D0-8FF152DA98FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EierfarmBl", "EierfarmBl\EierfarmBl.csproj", "{8C28700E-EA38-4A18-A0D0-8FF152DA98FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmUi", "EierfarmUi\EierfarmUi.csproj", "{C12413E5-84E3-4D3B-B36E-0B2910A4B694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EierfarmUi", "EierfarmUi\EierfarmUi.csproj", "{C12413E5-84E3-4D3B-B36E-0B2910A4B694}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsTaskDialogDemo", "WinFormsTaskDialog\WinFormsTaskDialogDemo.csproj", "{B464FE38-C37A-4F4D-9448-36691C98F7B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EierfarmUiWpf", "EierfarmUiWpf\EierfarmUiWpf.csproj", "{B1C15818-0D97-4186-9BB7-9F8499A11099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C12413E5-84E3-4D3B-B36E-0B2910A4B694}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12413E5-84E3-4D3B-B36E-0B2910A4B694}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12413E5-84E3-4D3B-B36E-0B2910A4B694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B464FE38-C37A-4F4D-9448-36691C98F7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B464FE38-C37A-4F4D-9448-36691C98F7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B464FE38-C37A-4F4D-9448-36691C98F7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B464FE38-C37A-4F4D-9448-36691C98F7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1C15818-0D97-4186-9BB7-9F8499A11099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C15818-0D97-4186-9BB7-9F8499A11099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C15818-0D97-4186-9BB7-9F8499A11099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C15818-0D97-4186-9BB7-9F8499A11099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

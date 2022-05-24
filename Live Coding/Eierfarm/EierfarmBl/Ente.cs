@@ -8,6 +8,11 @@ namespace EierfarmBl
 {
     public class Ente : Gefluegel
     {
+        public Ente():base("Neue Ente")
+        {
+            this.Gewicht = 1000;
+        }
+
         public override void EiLegen()
         {
             if (this.Gewicht>1500)

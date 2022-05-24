@@ -8,6 +8,16 @@ namespace EierfarmBl
 {
     public class Huhn : Gefluegel
     {
+        public Huhn() : base("Neues Huhn")
+        {
+            this.Gewicht = 1000;
+        }
+
+        public Huhn(string? name) : this()
+        {
+            this.Name = name;
+        }
+
         public override void EiLegen()
         {
             if (this.Gewicht > 1500)

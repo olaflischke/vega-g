@@ -9,19 +9,43 @@ namespace HistoricalRatesDal
         {
             this.Date = DateOnly.Parse(tradingDayNode.Attribute("time").Value);
 
-            CultureInfo ci=new CultureInfo("en-US");
+            CultureInfo ci = new CultureInfo("en-US");
             NumberFormatInfo nfi1 = ci.NumberFormat;
 
             NumberFormatInfo nfi = new() { NumberDecimalSeparator = "." };
 
-            this.ExchangeRates = tradingDayNode.Elements()
+            var qOriginal = tradingDayNode.Elements()
+                                            // Projektion auf Annonymous Type 'a
+                                            //.Select(el => new
+                                            //{
+                                            //    Symbol = el.Attribute("currency").Value,
+                                            //    EuroValue = Convert.ToDouble(el.Attribute("rate").Value, ci)
+                                            //});
                                             .Select(el => new ExchangeRate()
                                             {
                                                 Symbol = el.Attribute("currency").Value,
                                                 EuroValue = Convert.ToDouble(el.Attribute("rate").Value, ci) //NumberFormatInfo.InvariantInfo)
-                                            })
-                                            .ToList();
+                                            });
+
+            var qRc = tradingDayNode.Elements()
+                                    .Select(el => new ExchangeRatePositionalRecordClass(
+                                                                                        el.Attribute("currency").Value,
+                                                                                        Convert.ToDouble(el.Attribute("rate").Value, ci)
+                                                                                    )
+                                            );
+
+
+            var q = tradingDayNode.Elements().Select(el => new ExchangeRateStructNP()
+                                            {
+                                                Symbol = el.Attribute("currency").Value,
+                                                EuroValue = Convert.ToDouble(el.Attribute("rate").Value, ci)
+                                            });
+
+           this.ExchangeRates = qOriginal.ToList();
         }
+
+       
+        
 
         public DateOnly Date { get; set; }
         public List<ExchangeRate> ExchangeRates { get; set; }
