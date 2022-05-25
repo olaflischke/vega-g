@@ -15,6 +15,17 @@ namespace HistoricalRatesDal
             this.TradingDays = GetData(url);
         }
 
+        public void SaveToDb()
+        {
+            HistoricalRatesContext context = new HistoricalRatesContext();
+
+            //context.Database.EnsureDeleted();
+            context.Database.EnsureCreated();
+
+            context.TradingDays.AddRange(this.TradingDays);
+            context.SaveChanges();
+        }
+
         private List<TradingDay>? GetData(string url)
         {
             XDocument document = XDocument.Load(url); // DOM der XML-Datei erzeugen

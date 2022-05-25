@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysUndCollections", "ArraysUndCollections\ArraysUndCollections.csproj", "{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysUndCollections", "ArraysUndCollections\ArraysUndCollections.csproj", "{3F7AF6F3-2C2E-45DE-BBC9-4A208D1B41BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuples", "Tuples\Tuples.csproj", "{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuples", "Tuples\Tuples.csproj", "{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanUndMemory", "SpanUndMemory\SpanUndMemory.csproj", "{395A5647-1C68-4FBE-9E5E-13BDDE8459E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanUndMemoryTests", "SpanUndMemoryTests\SpanUndMemoryTests.csproj", "{F6E83CE8-E140-4FD3-87D6-A4D4E5D92859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryConsole", "MemoryConsole\MemoryConsole.csproj", "{6D499F0E-78E1-432C-9402-23508AFB9767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Channels", "Channels\Channels.csproj", "{CCB23B2A-958F-4C72-8D94-13774AD57C8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8874C4-A93D-43F4-B3EB-4C1DB9442EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395A5647-1C68-4FBE-9E5E-13BDDE8459E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395A5647-1C68-4FBE-9E5E-13BDDE8459E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395A5647-1C68-4FBE-9E5E-13BDDE8459E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395A5647-1C68-4FBE-9E5E-13BDDE8459E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E83CE8-E140-4FD3-87D6-A4D4E5D92859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E83CE8-E140-4FD3-87D6-A4D4E5D92859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E83CE8-E140-4FD3-87D6-A4D4E5D92859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E83CE8-E140-4FD3-87D6-A4D4E5D92859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D499F0E-78E1-432C-9402-23508AFB9767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D499F0E-78E1-432C-9402-23508AFB9767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D499F0E-78E1-432C-9402-23508AFB9767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D499F0E-78E1-432C-9402-23508AFB9767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB23B2A-958F-4C72-8D94-13774AD57C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB23B2A-958F-4C72-8D94-13774AD57C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB23B2A-958F-4C72-8D94-13774AD57C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB23B2A-958F-4C72-8D94-13774AD57C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

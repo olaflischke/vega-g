@@ -5,9 +5,14 @@ namespace HistoricalRatesDal
 {
     public class TradingDay
     {
+        public TradingDay()
+        {
+
+        }
+
         public TradingDay(XElement tradingDayNode)
         {
-            this.Date = DateOnly.Parse(tradingDayNode.Attribute("time").Value);
+            this.Date = Convert.ToDateTime(tradingDayNode.Attribute("time").Value); //DateOnly.Parse(tradingDayNode.Attribute("time").Value);
 
             CultureInfo ci = new CultureInfo("en-US");
             NumberFormatInfo nfi1 = ci.NumberFormat;
@@ -24,7 +29,8 @@ namespace HistoricalRatesDal
                                             .Select(el => new ExchangeRate()
                                             {
                                                 Symbol = el.Attribute("currency").Value,
-                                                EuroValue = Convert.ToDouble(el.Attribute("rate").Value, ci) //NumberFormatInfo.InvariantInfo)
+                                                EuroValue = Convert.ToDouble(el.Attribute("rate").Value, ci),
+                                                TradingDay=this
                                             });
 
             var qRc = tradingDayNode.Elements()
@@ -44,10 +50,10 @@ namespace HistoricalRatesDal
            this.ExchangeRates = qOriginal.ToList();
         }
 
-       
-        
 
-        public DateOnly Date { get; set; }
+        public int Id { get; set; }
+
+        public DateTime Date { get; set; }
         public List<ExchangeRate> ExchangeRates { get; set; }
     }
 }

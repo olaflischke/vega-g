@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EierfarmBl
 {
-    public abstract class Gefluegel : IEileger, INotifyPropertyChanged
+    public abstract class Gefluegel: IEileger, INotifyPropertyChanged 
     {
 
         public Gefluegel(string? name)

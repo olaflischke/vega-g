@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="EierfarmBl">
+      <HintPath>..\..\Eierfarm\EierfarmBl\bin\Debug\net6.0\EierfarmBl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

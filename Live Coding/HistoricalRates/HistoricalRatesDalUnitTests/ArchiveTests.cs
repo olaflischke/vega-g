@@ -11,8 +11,8 @@ namespace HistoricalRatesDalUnitTests
 
         public ArchiveTests()
         {
-            //url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml";
-            url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml";
+            url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml";
+            //url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml";
         }
 
         [TestMethod]
@@ -32,15 +32,16 @@ namespace HistoricalRatesDalUnitTests
         }
 
         [TestMethod]
-        public void MyTestMethod()
+        public void IsArchiveSavingToDb()
         {
-
+            Archive archive = new(url);
+            archive.SaveToDb();
         }
 
         private int CountAttribute(string attributeName)
         {
             // TODO: Echte Zählung implementieren
-            return 5989;
+            return 62;
         }
     }
 }
